@@ -425,14 +425,45 @@ img {
 }
 
 .container {
-  max-width: 1100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .button {
   text-decoration: none;
+}
+
+.logo__img {
+  vertical-align: middle;
+  min-width: 160px;
+}
+
+.logo {
+  margin-right: 80px;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .burger {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .burger--open {
+    background-image: url("../img/burger-open.svg");
+  }
+  .burger--close {
+    background-image: url("../img/burger-close.svg");
+  }
 }
 /*# sourceMappingURL=styles.css.map */
