@@ -1,0 +1,124 @@
+.intro {
+  padding-bottom: 250px;
+  background-color: #014E56;
+  background-image: url("../img/intro-left-img.png"),
+                      url("../img/intro-bottom-img.png");
+  background-repeat: no-repeat;
+  background-size: auto 200px, 358px auto ;
+  background-position: left calc(50% - 750px) top, right bottom;
+}
+
+.intro__container {
+  display: flex;
+}
+
+.intro__title {
+  margin: 0;
+  color: #fff;
+  font-size: 100px;
+  line-height: 100px;
+  font-weight: bold;
+  max-width: 615px;
+  width: 100%;
+  margin-right: 30px;
+
+  &--coral {
+    color: #F67E7E;
+  }
+}
+
+.intro__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 445px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro__text::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: #79C8C7;
+}
+
+@media only screen and(max-width: 915px) {
+
+  .intro__title {
+    font-size: 80px;
+    line-height: 86px;
+  }
+}
+
+@media only screen and(max-width: 830px) {
+
+  .intro__title {
+    font-size: 64px;
+    line-height: 56px;
+  }
+}
+
+@media only screen and(max-width: 768px) {
+
+  .intro {
+    background-image: url("../img/intro-bottom-img.png");
+    background-position: right calc(50% - 150px) bottom;
+    background-size: 358px auto ;
+  }
+
+  .intro__container {
+    flex-direction: column;
+  }
+
+  .intro__title {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .intro__text {
+    text-align: center;
+    max-width: 457px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .intro__text::before {
+    display: none;
+  }
+}
+
+@media only screen and(max-width: 385px) {
+
+  .intro {
+    padding-bottom: 200px;
+    background-position: center bottom;
+  }
+
+  .intro__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .intro__text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+
+
+@mixin retina-bg {
+  .intro {
+    background-image: url("../img/intro-left-img@2x.png"),
+                        url("../img/intro-bottom-img@2x.png");
+  }
+}

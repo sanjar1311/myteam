@@ -1,0 +1,38 @@
+.site-header {
+  background-color: #014E56;
+  padding: 73px 0 129px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and(max-width: 768px) {
+
+  .site-header {
+    background-color: #014E56;
+    padding: 64px 0 112px 0;
+  }
+}
+
+@media only screen and(max-width: 470px) {
+
+  .site-header__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and(max-width: 560px) {
+
+  .site-header__container {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and(max-width: 385px) {
+
+  .site-header {
+    padding: 44px 0 80px 0;
+  }
+}

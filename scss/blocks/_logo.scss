@@ -1,0 +1,35 @@
+.logo {
+  margin-right: 80px;
+}
+
+.logo__img {
+  width: 160px;
+  height: 40px;
+  display: block;
+}
+
+@media only screen and(max-width: 768px) {
+
+  .logo {
+    margin-right: 48px;
+  }
+
+  .logo__img {
+    min-width: 128px;
+    height: 32px;
+  }
+}
+
+@media only screen and(max-width: 480px) {
+
+  .logo {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and(max-width: 375px) {
+
+  .logo {
+    z-index: 50;
+  }
+}

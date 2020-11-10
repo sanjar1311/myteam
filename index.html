@@ -7,13 +7,14 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+                <!-- HEADER -->
 
-  <header class="site-header">
-    <div class="container">
+  <header class="site-header ">
+    <div class="container site-header__container">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" width="160" height="40" alt="Myteam - site logo">
+      </a>
       <nav class="nav">
-        <a class="logo" href="index.html">
-          <img class="logo__img" src="img/logo.svg" width="160" height="40" alt="Myteam - site logo">
-        </a>
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#" class="nav__link">home</a>
@@ -21,12 +22,57 @@
           <li class="nav__item">
             <a href="#" class="nav__link">about</a>
           </li>
-          <a class="nav__link nav__contact-link" href="#">contact us</a>
         </ul>
-        <button class="burger burger--open "></button>
       </nav>
+      <a class="nav__link nav__contact-link" href="#">contact us</a>
+      <button class="burger burger-open"></button>
     </div>
   </header>
+                    <!-- INTRO -->
+
+  <section class="intro">
+    <div class="container intro__container">
+      <h1 class="intro__title">Find the best <span class="intro__title--coral">talent</span></h1>
+      <p class="intro__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+    </div>
+  </section>
+                    <!-- HERO -->
+
+  <section class="hero">
+    <div class="container hero__container">
+      <h2 class="hero__title">Build & manage distributed teams like no one else.</h2>
+      <ul class="hero__list">
+
+        <li class="hero__item hero-item hero-item--individual">
+          <div class="hero-item__inner">
+            <h3 class="hero-item__heading">Experienced Individuals</h3>
+            <p class="hero-item__text">Our network is made up of highly experienced professionals who are passionate about what they do.</p>
+          </div>
+        </li>
+
+        <li class="hero__item hero-item hero-item--easy">
+          <div class="hero-item__inner">
+            <h3 class="hero-item__heading">Easy to Implement</h3>
+            <p class="hero-item__text">Our processes have been refined over years of implementation meaning our teams always deliver.</p>
+          </div>
+        </li>
+
+        <li class="hero__item hero-item hero-item--productivity">
+          <div class="hero-item--inner">
+            <h3 class="hero-item__heading">Enhanced Productivity</h3>
+            <p class="hero-item__text">Our customized platform with in-built analytics helps you manage your distributed teams.</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+                    <!-- REVIEW -->
+
+                    <!-- START -->
+
+                    <!-- FOOTER -->
 
   <script src="main.js"></script>
 </body>

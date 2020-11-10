@@ -1,0 +1,32 @@
+.burger {
+  display: none;
+}
+
+@media only screen and(max-width: 560px) {
+
+  .burger {
+    width: 20px;
+    height: 17px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: 55;
+    display: block;
+  }
+
+  .burder::after {
+    transform: scale(1.5);
+  }
+
+  .burger-open {
+    background-image: url("../img/burger-open.svg");
+  }
+
+  .burger-close {
+    background-image: url("../img/burger-close.svg");
+  }
+}
