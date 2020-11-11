@@ -1045,5 +1045,17 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .review__user-profession::after {
+    margin-bottom: 84px;
+  }
+  .review__clarke::after {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .review::before {
+    top: -10%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

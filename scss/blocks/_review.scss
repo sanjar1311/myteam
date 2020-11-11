@@ -78,4 +78,21 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .review__user-profession::after {
+    margin-bottom: 84px;
+  }
+
+  .review__clarke::after {
+    margin-bottom: 0;
+  }
+}
+
+@include breakpoint-down (375) {
+  .review {
+
+    &::before {
+      top: -10%;
+    }
+  }
 }
