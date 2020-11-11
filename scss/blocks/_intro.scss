@@ -74,8 +74,7 @@
 @media only screen and(max-width: 768px) {
 
   .intro {
-    background-image: url("../img/intro-bottom-img.png");
-    background-position: right calc(50% - 150px) bottom;
+    background-position: left calc(50% - 800px) top, center bottom;
     background-size: 358px auto ;
   }
 
@@ -108,7 +107,8 @@
 
   .intro {
     padding-bottom: 200px;
-    background-position: center bottom;
+    background-position: left calc(50% - 800px) top, center bottom;
+    background-size: 298px auto ;
   }
 
   .intro__title {
