@@ -5,7 +5,7 @@
                       url("../img/intro-bottom-img.png");
   background-repeat: no-repeat;
   background-size: auto 200px, 358px auto ;
-  background-position: left calc(50% - 750px) top, right bottom;
+  background-position: left calc(50% - 800px) top, right calc(50% - 400px) bottom;
 }
 
 .intro__container {
@@ -49,6 +49,10 @@
 
 @media only screen and(max-width: 915px) {
 
+  .intro {
+    background-position: left calc(50% - 750px) top, right calc(50% - 300px) bottom;
+  }
+
   .intro__title {
     font-size: 80px;
     line-height: 86px;
@@ -56,6 +60,10 @@
 }
 
 @media only screen and(max-width: 830px) {
+
+  .intro {
+    background-position: left calc(50% - 750px) top, right calc(50% - 200px) bottom;
+  }
 
   .intro__title {
     font-size: 64px;
@@ -114,11 +122,9 @@
   }
 }
 
-
-
-@mixin retina-bg {
+@include retina-bg {
   .intro {
     background-image: url("../img/intro-left-img@2x.png"),
-                        url("../img/intro-bottom-img@2x.png");
+                          url("../img/intro-bottom-img@2x.png");
   }
 }

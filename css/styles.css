@@ -595,7 +595,7 @@ img {
   background-image: url("../img/intro-left-img.png"), url("../img/intro-bottom-img.png");
   background-repeat: no-repeat;
   background-size: auto 200px, 358px auto;
-  background-position: left calc(50% - 750px) top, right bottom;
+  background-position: left calc(50% - 800px) top, right calc(50% - 400px) bottom;
 }
 
 .intro__container {
@@ -647,6 +647,9 @@ img {
 }
 
 @media only screen and (max-width: 915px) {
+  .intro {
+    background-position: left calc(50% - 750px) top, right calc(50% - 300px) bottom;
+  }
   .intro__title {
     font-size: 80px;
     line-height: 86px;
@@ -654,6 +657,9 @@ img {
 }
 
 @media only screen and (max-width: 830px) {
+  .intro {
+    background-position: left calc(50% - 750px) top, right calc(50% - 200px) bottom;
+  }
   .intro__title {
     font-size: 64px;
     line-height: 56px;
@@ -703,6 +709,12 @@ img {
   .intro__text {
     font-size: 15px;
     line-height: 28px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../img/intro-left-img@2x.png"), url("../img/intro-bottom-img@2x.png");
   }
 }
 
@@ -886,6 +898,152 @@ img {
     background-image: url("../img/productivity.svg");
     margin-right: 0;
     margin-bottom: 16px;
+  }
+}
+
+.reviews {
+  background-color: #004047;
+  color: #fff;
+  padding: 140px 0;
+  background-image: url("../img/rewiw-left.png"), url("../img/reviw-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews__title {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  max-width: 932px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 92px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reviews__title .reviews__title--blue-text {
+  color: #79C8C7;
+}
+
+.reviews__reviews-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .reviews__reviews-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reviews__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 84px;
+    max-width: 483px;
+  }
+}
+
+.review {
+  max-width: 30%;
+  margin: 0 1.75%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.review::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -13%;
+  width: 67px;
+  height: 56px;
+  background-image: url("../img/blockquote.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 0;
+}
+
+.review__blockquote {
+  display: block;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.review__user-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+  color: #79C8C7;
+}
+
+.review__user-profession {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review__user-profession::after {
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 32px;
+}
+
+.review__baker::after {
+  background-image: url("../img/baker.svg");
+}
+
+.review__reese::after {
+  background-image: url("../img/reese.svg");
+}
+
+.review__clarke::after {
+  background-image: url("../img/clarke.svg");
+}
+
+@media only screen and (max-width: 768px) {
+  .review {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

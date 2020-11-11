@@ -1,0 +1,45 @@
+.reviews {
+  background-color: #004047;
+  color: #fff;
+  padding: 140px 0;
+  background-image: url("../img/rewiw-left.png"),
+                      url("../img/reviw-right.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__title {
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  max-width: 932px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 92px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reviews__title .reviews__title--blue-text {
+  color: #79C8C7;
+}
+
+.reviews__reviews-list {
+  @include reset-list;
+  display: flex;
+}
+
+@include breakpoint-down (768) {
+  .reviews__reviews-list {
+    flex-direction: column;
+  }
+
+  .reviews__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 84px;
+    max-width: 483px;
+  }
+}

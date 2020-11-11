@@ -1,0 +1,81 @@
+.review {
+  max-width: 30%;
+  margin: 0 1.75%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(50%);
+    transform: translateX(-50%);
+    top: -13%;
+    width: 67px;
+    height: 56px;
+    background-image: url("../img/blockquote.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+  }
+}
+
+.review__blockquote {
+  display: block;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.review__user-name {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 2px;
+  color: #79C8C7;
+}
+
+.review__user-profession {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 32px;
+  }
+}
+
+.review__baker::after {
+  background-image: url("../img/baker.svg");
+}
+
+.review__reese::after {
+  background-image: url("../img/reese.svg");
+}
+
+.review__clarke::after {
+  background-image: url("../img/clarke.svg");
+}
+
+@include breakpoint-down (768) {
+  .review {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
