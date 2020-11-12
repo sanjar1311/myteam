@@ -3,7 +3,7 @@
   padding: 140px 0;
   background-image: url("../img/hero-bg.png");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right calc(50% - 750px) bottom;
 }
 
 .hero__container {
@@ -42,6 +42,16 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@include breakpoint-down (1400){
+  .hero {
+    background-color: #012F34;
+    padding: 140px 0;
+    background-image: url("../img/hero-bg.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
   }
 }
 

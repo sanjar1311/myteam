@@ -5,7 +5,7 @@
   background-image: url("../img/rewiw-left.png"),
                       url("../img/reviw-right.png");
   background-repeat: no-repeat;
-  background-position: left top, right bottom;
+  background-position: left calc(50% - 720px) top, right calc(50% - 720px) bottom;
   display: flex;
   flex-direction: column;
 }
@@ -29,6 +29,12 @@
 .reviews__reviews-list {
   @include reset-list;
   display: flex;
+}
+
+@include breakpoint-down (1300) {
+  .reviews {
+    background-position: left top, right bottom;
+  }
 }
 
 @include breakpoint-down (768) {
