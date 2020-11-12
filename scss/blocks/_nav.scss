@@ -17,6 +17,10 @@
   line-height: 28px;
   font-weight: 600;
   white-space: nowrap;
+
+  &:hover {
+    color: #F67E7E;
+  }
 }
 
 .nav__contact-link {
@@ -24,6 +28,15 @@
   padding: 8px 30px;
   border: 2px solid #fff;
   border-radius: 24px;
+
+  &:hover {
+    color: #002529;
+    background-color: #fff;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media only screen and(max-width: 560px) {

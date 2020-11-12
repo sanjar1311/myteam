@@ -26,7 +26,11 @@
 
 .footer-top__link {
   text-decoration: none;
-color: #fff;
+  color: #fff;
+
+  &:hover {
+    color: #F67E7E;
+  }
 }
 
 @include breakpoint-down (768) {

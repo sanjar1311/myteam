@@ -26,6 +26,16 @@
   border-radius: 24px;
   padding: 9px 32px;
   white-space: nowrap;
+  background-color: #F67E7E;
+
+  &:hover {
+    color: #fff;
+    background-color: #012F34;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @include breakpoint-down(1300) {
