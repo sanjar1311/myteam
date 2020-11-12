@@ -42,6 +42,7 @@
 
   .start {
     background-position: left bottom;
+    background-size: 200px auto;
   }
 }
 
@@ -72,5 +73,12 @@
   .start__container {
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+@include retina-bg {
+
+  .start {
+    background-image: url("../img/start-bg@2x.png");
   }
 }

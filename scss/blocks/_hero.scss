@@ -52,6 +52,7 @@
     background-image: url("../img/hero-bg.png");
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 100px auto;
   }
 }
 
@@ -95,5 +96,12 @@
     font-size: 32px;
     line-height: 32px;
     margin-left: 0;
+  }
+}
+
+@include retina-bg {
+
+  .hero {
+    background-image: url("../img/hero-bg@2x.png");
   }
 }

@@ -75,3 +75,10 @@
     font-size: 15px;
   }
 }
+
+@include retina-bg {
+
+  .about{
+    background-image: url("../img/about-bg@2x.png");
+  }
+}

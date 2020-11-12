@@ -38,6 +38,7 @@
                         url("../img/rewiw-left.png");
     background-repeat: no-repeat;
     background-position: left top, right bottom;
+    background-size: 250px auto;
   }
 
   .directors__item {
@@ -90,5 +91,13 @@
       &:nth-child(2n) {
         margin-right: 0;
       }
+  }
+}
+
+@include retina-bg {
+
+  .directors {
+    background-image: url("../img/directors-left-bg@2x.png"),
+                        url("../img/rewiw-left@2x.png");
   }
 }

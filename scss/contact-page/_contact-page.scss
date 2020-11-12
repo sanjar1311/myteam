@@ -62,20 +62,22 @@
 .contact-page__input {
   padding: 24px 0 16px 20px;
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #fff;
   background-color: #014E56;
   letter-spacing: -0.115385px;
   width: 100%;
   margin-bottom: 8px;
   outline: none;
+  color: #fff;
 
   &::placeholder {
     color: #fff;
     opacity: 0.6;
   }
 
-  &:focus {
-    border-bottom: 2px solid #F67E7E;
+  &:focus,
+  &:hover {
+    border-bottom: 2px solid #79C8C7;
   }
 }
 
@@ -91,14 +93,35 @@
   border: 2px solid #fff;
   border-radius: 24px;
   cursor: pointer;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #004047;
+    border: 2px solid #004047;
+    color: #fff;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
+
+.contact-page__email-input:not(:placeholder-shown):invalid {
+  border-bottom: 2px solid rgba(255, 0, 0, .6);
+}
+
+.contact-page__email-input:not(:placeholder-shown):valid {
+  border-bottom: 2px solid lightgreen;
+}
+
 
 @include breakpoint-down (984) {
 
   .contact-page {
     background-image: url("../img/director-bgg.png"),
                         url("../img/contact.png");
-    background-position: left top, right  bottom;
+    background-position: left calc(50% - 400px) top, right calc(50% - 290px)  bottom -200px;
+    background-size: 250px auto;
   }
 
   .contact-page__container {
@@ -147,4 +170,12 @@
     margin-right: auto;
   }
 
+}
+
+@include retina-bg {
+
+  .contact-page {
+    background-image: url("../img/contact-left-bg@2x.png"),
+                        url("../img/contact-right-bg@2x.png");
+  }
 }

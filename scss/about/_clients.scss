@@ -70,3 +70,10 @@
     margin-right: 0;
   }
 }
+
+@include retina-bg {
+
+  .clients {
+    background-image: url("../../img/clients-bg@2x.png");
+  }
+}

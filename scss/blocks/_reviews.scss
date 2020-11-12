@@ -34,6 +34,7 @@
 @include breakpoint-down (1300) {
   .reviews {
     background-position: left top, right bottom;
+    background-size: 190px auto;
   }
 }
 
@@ -47,5 +48,13 @@
     line-height: 32px;
     margin-bottom: 84px;
     max-width: 483px;
+  }
+}
+
+@include retina-bg {
+
+  .reviews {
+    background-image: url("../img/rewiw-left@2x.png"),
+                        url("../img/reviw-right@2x.png");
   }
 }
