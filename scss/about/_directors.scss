@@ -1,0 +1,32 @@
+.directors {
+  background-color: #004047;
+  padding: 140px 0;
+  color: #fff;
+  background-image: url("../img/directors-left-bg.png"),
+                      url("../img/rewiw-left.png");
+  background-repeat: no-repeat;
+  background-position: left calc(50% - 800px) top, right bottom;
+}
+
+.directors__title {
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.directors__list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.directors__item {
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}

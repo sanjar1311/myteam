@@ -45,3 +45,10 @@
     display: flex;
   }
 }
+
+@include breakpoint-down (320) {
+
+  .footer-bottom__text {
+    text-align: center;
+  }
+}

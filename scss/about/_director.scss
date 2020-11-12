@@ -1,0 +1,75 @@
+.director {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  background-color: #012F34;
+  margin-bottom: 76px;
+  padding: 128px 0 56px 0;
+
+  &::before {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 96px;
+    height: 96px;
+    background-image: url("../img/nikita.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.director__btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -26px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.director__btn--open {
+  background-color: #F67E7E;
+  background-image: url("../img/plus.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.director__blockquote {
+  display: none;
+}
+
+.director__btn--close {
+  background-color: #79C8C7;
+  background-image: url("../img/x.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.director__name {
+  color: #79C8C7;
+}
+
+.director__profession {
+  font-style: italic;
+}
+
+.directors__open .director{
+  padding: 32px 0 56px 0;
+
+  &::before {
+    display: none;
+  }
+}
+
+.directors__open .director__blockquote {
+  display: block;
+}
