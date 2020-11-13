@@ -2,8 +2,12 @@ var burgerBtn = document.querySelector('.burger');
 var siteHeader = document.querySelector('.site-header');
 
 burgerBtn.addEventListener('click', function(){
-  siteHeader.classList.toggle('site-header--open')
-})
+  siteHeader.classList.toggle('site-header--open');
+});
+
+burgerBtn.addEventListener('click', function() {
+  burgerBtn.classList.toggle('burger-close');
+});
 
 
 /*   about-section */
