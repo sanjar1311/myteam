@@ -19,9 +19,6 @@ elToggler.forEach(function(togglercha, raqam) {
     togglercha.addEventListener('click', function(){
       var chackedItem = document.querySelector('.director--open');
 
-      if(chackedItem) {
-        chackedItem.classList.remove('director--open');
-      }
       directList[raqam].classList.toggle('director--open');
     });
 
