@@ -1711,8 +1711,8 @@ img {
   background-color: #012F34;
   margin-bottom: 76px;
   padding: 128px 0 56px 0;
-  -webkit-animation: pastga .3s ease forwards;
-          animation: pastga .3s ease forwards;
+  -webkit-animation: pastga .6s ease forwards;
+          animation: pastga .6s ease forwards;
 }
 
 .director::before {
@@ -1817,8 +1817,8 @@ img {
 
 .director--open {
   padding: 14px 0 56px 0;
-  -webkit-animation: tepaga .3s ease forwards;
-          animation: tepaga .3s ease forwards;
+  -webkit-animation: tepaga .6s ease forwards;
+          animation: tepaga .6s ease forwards;
 }
 
 .director--open::before {

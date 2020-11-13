@@ -6,7 +6,7 @@
   background-color: #012F34;
   margin-bottom: 76px;
   padding: 128px 0 56px 0;
-  animation: pastga .3s ease forwards;
+  animation: pastga .6s ease forwards;
 
   &::before {
     position: absolute;
@@ -106,7 +106,7 @@
 
 .director--open {
   padding: 14px 0 56px 0;
-  animation: tepaga .3s ease forwards;
+  animation: tepaga .6s ease forwards;
 
   &::before {
     display: none;
