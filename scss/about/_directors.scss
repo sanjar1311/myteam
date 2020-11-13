@@ -80,6 +80,7 @@
                         url("../img/rewiw-left.png");
     background-repeat: no-repeat;
     background-position: left top -4.5%, right bottom;
+    background-size: 200px auto;
   }
 
   .directors__item {
@@ -91,6 +92,13 @@
       &:nth-child(2n) {
         margin-right: 0;
       }
+  }
+}
+
+@include breakpoint-down (700) {
+
+  .directors {
+    background-size: 150px auto;
   }
 }
 

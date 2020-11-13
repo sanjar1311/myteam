@@ -1678,6 +1678,7 @@ img {
     background-image: url("../img/director-bgg.png"), url("../img/rewiw-left.png");
     background-repeat: no-repeat;
     background-position: left top -4.5%, right bottom;
+    background-size: 200px auto;
   }
   .directors__item {
     margin-right: 0;
