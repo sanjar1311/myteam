@@ -12,12 +12,12 @@ burgerBtn.addEventListener('click', function() {
 
 /*   about-section */
 
-var directList = document.querySelector('.directors__list');
+var directList = document.querySelector('.director');
 
 var toggler = document.querySelector('.director__btn');
 
 toggler.addEventListener('click', function(){
-  directList.classList.toggle('directors__open');
+  directList.classList.toggle('director--open');
 });
 
 toggler.addEventListener('click', function(){

@@ -6,6 +6,7 @@
   background-color: #012F34;
   margin-bottom: 76px;
   padding: 128px 0 56px 0;
+  animation: pastga .3s ease forwards;
 
   &::before {
     position: absolute;
@@ -16,11 +17,35 @@
     display: block;
     width: 96px;
     height: 96px;
-    background-image: url("../img/nikita.png");
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+}
+
+.director--nikita::before {
+  background-image: url("../img/nikita.png");
+}
+
+.director--cristian::before {
+  background-image: url("../img/kristian.png");
+}
+
+.director--kruz::before {
+  background-image: url("../img/kruz.png");
+}
+
+.director--drake::before {
+  background-image: url("../img/drake.png");
+}
+
+.director--griffin::before {
+  background-image: url("../img/griffin.png");
+}
+
+.director--aden::before {
+  background-image: url("../img/kristian.png");
 }
 
 .director__btn {
@@ -79,18 +104,43 @@
   font-style: italic;
 }
 
-.directors__open .director{
+.director--open {
   padding: 14px 0 56px 0;
+  animation: tepaga .3s ease forwards;
 
   &::before {
     display: none;
   }
 }
 
-.directors__open .director__blockquote {
+.director--open .director__blockquote {
   display: block;
 }
 
-.directors__open .director__social-list {
+.director--open .director__social-list {
   display: flex;
+}
+
+@keyframes tepaga {
+  from{
+    opacity: 0;
+    transform: translateY(25%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pastga {
+  from{
+    opacity: 0;
+    transform: translateY(-25%);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

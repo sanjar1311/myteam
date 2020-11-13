@@ -1691,6 +1691,12 @@ img {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .directors {
+    background-size: 150px auto;
+  }
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .directors {
     background-image: url("../img/directors-left-bg@2x.png"), url("../img/rewiw-left@2x.png");
@@ -1705,6 +1711,8 @@ img {
   background-color: #012F34;
   margin-bottom: 76px;
   padding: 128px 0 56px 0;
+  -webkit-animation: pastga .3s ease forwards;
+          animation: pastga .3s ease forwards;
 }
 
 .director::before {
@@ -1717,10 +1725,33 @@ img {
   display: block;
   width: 96px;
   height: 96px;
-  background-image: url("../img/nikita.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.director--nikita::before {
+  background-image: url("../img/nikita.png");
+}
+
+.director--cristian::before {
+  background-image: url("../img/kristian.png");
+}
+
+.director--kruz::before {
+  background-image: url("../img/kruz.png");
+}
+
+.director--drake::before {
+  background-image: url("../img/drake.png");
+}
+
+.director--griffin::before {
+  background-image: url("../img/griffin.png");
+}
+
+.director--aden::before {
+  background-image: url("../img/kristian.png");
 }
 
 .director__btn {
@@ -1784,22 +1815,76 @@ img {
   font-style: italic;
 }
 
-.directors__open .director {
+.director--open {
   padding: 14px 0 56px 0;
+  -webkit-animation: tepaga .3s ease forwards;
+          animation: tepaga .3s ease forwards;
 }
 
-.directors__open .director::before {
+.director--open::before {
   display: none;
 }
 
-.directors__open .director__blockquote {
+.director--open .director__blockquote {
   display: block;
 }
 
-.directors__open .director__social-list {
+.director--open .director__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@-webkit-keyframes tepaga {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes tepaga {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes pastga {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes pastga {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .clients {
