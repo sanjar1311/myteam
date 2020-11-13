@@ -574,22 +574,6 @@ img {
   .nav {
     display: none;
   }
-  .site-header--open {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  .site-header--open::before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
   .site-header--open .nav {
     display: block;
     position: absolute;
@@ -597,7 +581,7 @@ img {
     top: 0;
     background-color: #2C6269;
     width: 70%;
-    height: 100%;
+    height: 100vh;
     padding: 112px 0 0 48px;
     z-index: 71;
     -webkit-box-orient: vertical;
