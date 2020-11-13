@@ -2026,8 +2026,19 @@ img {
   opacity: 0.6;
 }
 
+.contact-page__invalid {
+  display: none;
+  font-size: 14px;
+  font-style: italic;
+  color: #F67E7E;
+}
+
 .contact-page__email-input:not(:placeholder-shown):invalid {
-  border-bottom: 2px solid rgba(255, 0, 0, 0.6);
+  border-bottom: 2px solid #F67E7E;
+}
+
+.contact-page__email-input:not(:placeholder-shown):invalid ~ .contact-page__invalid {
+  display: block;
 }
 
 .contact-page__email-input:not(:placeholder-shown):valid {
