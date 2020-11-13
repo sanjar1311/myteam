@@ -12,14 +12,20 @@ burgerBtn.addEventListener('click', function() {
 
 /*   about-section */
 
-var directList = document.querySelector('.director');
+var elToggler = document.querySelectorAll('.director__btn');
+var directList = document.querySelectorAll('.director');
 
-var toggler = document.querySelector('.director__btn');
+elToggler.forEach(function(togglercha, raqam) {
+    togglercha.addEventListener('click', function(){
+      var chackedItem = document.querySelector('.director--open');
 
-toggler.addEventListener('click', function(){
-  directList.classList.toggle('director--open');
-});
+      if(chackedItem) {
+        chackedItem.classList.remove('director--open');
+      }
+      directList[raqam].classList.toggle('director--open');
+    });
 
-toggler.addEventListener('click', function(){
-  toggler.classList.toggle('director__btn--close');
+    togglercha.addEventListener('click', function(){
+      elToggler[raqam].classList.toggle('director__btn--close');
+    });
 });
