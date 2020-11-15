@@ -115,6 +115,7 @@
 
 .contact-page__email-input:not(:placeholder-shown):invalid {
   border-bottom: 2px solid #F67E7E;
+  color: #F67E7E;
 }
 
 .contact-page__email-input:not(:placeholder-shown):invalid ~ .contact-page__invalid {
